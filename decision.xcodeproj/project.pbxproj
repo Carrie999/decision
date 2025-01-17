@@ -11,6 +11,10 @@
 		76D708932CE97E6100CDF7C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D708922CE97E6100CDF7C0 /* ContentView.swift */; };
 		76D708952CE97E6300CDF7C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D708942CE97E6300CDF7C0 /* Assets.xcassets */; };
 		76D708982CE97E6300CDF7C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D708972CE97E6300CDF7C0 /* Preview Assets.xcassets */; };
+		76D708A32CED7F5B00CDF7C0 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 76D708A22CED7F5B00CDF7C0 /* InfoPlist.xcstrings */; };
+		76D708A52CED7F7600CDF7C0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 76D708A42CED7F7600CDF7C0 /* Localizable.xcstrings */; };
+		76D708A72CED8ABF00CDF7C0 /* storeKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D708A62CED8ABF00CDF7C0 /* storeKitManager.swift */; };
+		76D708AA2CED8FCD00CDF7C0 /* propertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76D708A92CED8FCD00CDF7C0 /* propertyList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		76D708922CE97E6100CDF7C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76D708942CE97E6300CDF7C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D708972CE97E6300CDF7C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		76D708A22CED7F5B00CDF7C0 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		76D708A42CED7F7600CDF7C0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		76D708A62CED8ABF00CDF7C0 /* storeKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storeKitManager.swift; sourceTree = "<group>"; };
+		76D708A82CED8F7200CDF7C0 /* decison.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = decison.storekit; sourceTree = "<group>"; };
+		76D708A92CED8FCD00CDF7C0 /* propertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = propertyList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,8 @@
 		76D708842CE97E6100CDF7C0 = {
 			isa = PBXGroup;
 			children = (
+				76D708A42CED7F7600CDF7C0 /* Localizable.xcstrings */,
+				76D708A22CED7F5B00CDF7C0 /* InfoPlist.xcstrings */,
 				76D7088F2CE97E6100CDF7C0 /* decision */,
 				76D7088E2CE97E6100CDF7C0 /* Products */,
 			);
@@ -51,8 +62,11 @@
 		76D7088F2CE97E6100CDF7C0 /* decision */ = {
 			isa = PBXGroup;
 			children = (
+				76D708A82CED8F7200CDF7C0 /* decison.storekit */,
+				76D708A92CED8FCD00CDF7C0 /* propertyList.plist */,
 				76D708902CE97E6100CDF7C0 /* decisionApp.swift */,
 				76D708922CE97E6100CDF7C0 /* ContentView.swift */,
+				76D708A62CED8ABF00CDF7C0 /* storeKitManager.swift */,
 				76D708942CE97E6300CDF7C0 /* Assets.xcassets */,
 				76D708962CE97E6300CDF7C0 /* Preview Content */,
 			);
@@ -109,6 +123,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 76D708842CE97E6100CDF7C0;
 			productRefGroup = 76D7088E2CE97E6100CDF7C0 /* Products */;
@@ -125,7 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D708A32CED7F5B00CDF7C0 /* InfoPlist.xcstrings in Resources */,
 				76D708982CE97E6300CDF7C0 /* Preview Assets.xcassets in Resources */,
+				76D708A52CED7F7600CDF7C0 /* Localizable.xcstrings in Resources */,
+				76D708AA2CED8FCD00CDF7C0 /* propertyList.plist in Resources */,
 				76D708952CE97E6300CDF7C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +157,7 @@
 			files = (
 				76D708932CE97E6100CDF7C0 /* ContentView.swift in Sources */,
 				76D708912CE97E6100CDF7C0 /* decisionApp.swift in Sources */,
+				76D708A72CED8ABF00CDF7C0 /* storeKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +294,12 @@
 				DEVELOPMENT_TEAM = F7TRH9293R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Decision;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +307,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = siantgirl.com.decision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,11 +328,12 @@
 				DEVELOPMENT_TEAM = F7TRH9293R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Decision;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +341,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = siantgirl.com.decision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
